@@ -1,0 +1,49 @@
+{
+  "url": "https://trial.1office.vn",
+  "timestamp": "2025-07-06T08:23:23.777Z",
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "nginx",
+      "date": "Sun, 06 Jul 2025 08:23:23 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "vary": "Accept-Encoding, Accept-Encoding",
+      "set-cookie": [
+        "PHPSESSID=9g6jcl0qsoh0733hjda8grtjvf; path=/; domain=.trial.1office.vn; secure; HttpOnly",
+        "1office_fe18c435a9237e72155e94ce4f7afff97dfd2b73language=TDI0NXk5Uks2VEdG; expires=Tue, 14 Oct 2025 08:23:23 GMT; Max-Age=8640000; path=/; secure; HttpOnly; SameSite=None"
+      ],
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "csrf-token-cache": "5c60ec434ade3a4530f1e70933186468",
+      "access-control-allow-origin": "https://apis.1office.vn",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "86400",
+      "alt-svc": "h3-23=\":443\"; ma=86400",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "ALLOWALL",
+      "content-encoding": "gzip"
+    }
+  },
+  "analysis": {
+    "title": "",
+    "metaTags": [],
+    "cssFiles": [],
+    "jsFiles": [],
+    "inlineStyles": [],
+    "inlineScripts": [],
+    "forms": [],
+    "inputs": [],
+    "buttons": [],
+    "frameworks": [],
+    "structure": {}
+  },
+  "loginFormAnalysis": {
+    "emailInputs": [],
+    "passwordInputs": [],
+    "submitButtons": []
+  }
+}

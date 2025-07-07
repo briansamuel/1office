@@ -1,0 +1,713 @@
+{
+  "timestamp": "2025-07-06T08:35:30.304Z",
+  "pages": [
+    {
+      "url": "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Fwork",
+      "title": "1Office",
+      "metaTags": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        }
+      ],
+      "cssFiles": [],
+      "jsFiles": [],
+      "inlineStyles": [],
+      "inlineScripts": [
+        {
+          "index": 1,
+          "content": "var baseURL = \"https://trial.1office.vn\";\nvar styleURL = \"/packages/4x/style/\";\nvar VERSION = \"1751618734753\";\nvar MOBILE = false;\nvar APP_NATIVE = false;\nvar APP_TOKEN = null;\nvar APP_DEVICE = null;\nvar ANDROID_ID = \"vn.oneoffice.oneoffice\";\nvar IOS_ID = \"1272801903\";\nvar HTTP_X_REQUESTED_WITH = \"\";\nvar $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,e){a.raw=e;return a};$jscomp.ASSUME_ES5=!1;...",
+          "length": 19002
+        },
+        {
+          "index": 2,
+          "content": "// Define translations for JavaScript\n    window.TRANSLATIONS = {\n        view_on_app: \"View on 1Office app?\",\n        agree: \"Agree\",\n        skip: \"Skip\",\n        skype_message: \"You are opening the link via Skype, unfortunately this application does not support automatic switching to the 1Office app version. For a better experience, please choose to share the link to your default browser.\",\n        close: \"Close\"\n    };\n\n    if (window.MOBILE) {\n        let originHeight = window.visualViewpor...",
+          "length": 3689
+        },
+        {
+          "index": 3,
+          "content": "function validType(e) {\n        if (typeof e != 'undefined') {\n            var type = e.getAttribute('data-type') || '',\n                loginURL = e.getAttribute('data-url') || '';\n\n            if (type === 'LDAP') {\n                document.getElementById('form-login').setAttribute('action', loginURL);\n                document.getElementById('ldap').style.display = 'block';\n                document.getElementById('orline').style.display = 'none';\n            }\n        }\n    }\n\n    function rol...",
+          "length": 2562
+        },
+        {
+          "index": 4,
+          "content": "/**\n     * Get user language from URL, cookie, or browser settings\n     * @returns {string} 'vn' or 'en'\n     */\n    function getUserLanguage() {\n        const urlLang = new URLSearchParams(window.location.search).get('lang');\n        if (['vn', 'en'].includes(urlLang)) return urlLang;\n\n        const cookieLang = \"en\";\n        if (['vn', 'en'].includes(cookieLang)) return cookieLang;\n\n        return (navigator.language || \"en\").startsWith('vi') ? 'vn' : 'en';\n    }\n\n    /**\n     * Update dropdow...",
+          "length": 3159
+        }
+      ],
+      "forms": [
+        {
+          "index": 1,
+          "action": "https://trial.1office.vn/login",
+          "method": "post",
+          "id": "form-login",
+          "hasCSRF": false
+        }
+      ],
+      "inputs": [
+        {
+          "index": 1,
+          "type": "hidden",
+          "name": "url_login",
+          "id": "url-login"
+        },
+        {
+          "index": 2,
+          "type": "hidden",
+          "name": "r",
+          "id": ""
+        },
+        {
+          "index": 3,
+          "type": "hidden",
+          "name": "selected_language",
+          "id": "selected_language"
+        },
+        {
+          "index": 4,
+          "type": "text",
+          "name": "username",
+          "id": "username"
+        },
+        {
+          "index": 5,
+          "type": "password",
+          "name": "userpwd",
+          "id": "userpwd"
+        },
+        {
+          "index": 6,
+          "type": "checkbox",
+          "name": "persistent",
+          "id": "remember"
+        }
+      ],
+      "buttons": [],
+      "links": [
+        {
+          "href": "/login/reset",
+          "text": "Forgot your login password?",
+          "isModule": false
+        }
+      ],
+      "modules": [
+        {
+          "name": "work",
+          "occurrences": 2
+        }
+      ],
+      "navigation": [],
+      "apiEndpoints": [
+        "https://trial.1office.vn"
+      ],
+      "frameworks": [],
+      "securityFeatures": {
+        "csrfTokens": [],
+        "cookies": [],
+        "headers": []
+      }
+    },
+    {
+      "url": "https://trial.1office.vn/hrm",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "metaTags": [],
+      "cssFiles": [],
+      "jsFiles": [],
+      "inlineStyles": [],
+      "inlineScripts": [],
+      "forms": [],
+      "inputs": [],
+      "buttons": [],
+      "links": [],
+      "modules": [],
+      "navigation": [],
+      "apiEndpoints": [],
+      "frameworks": [],
+      "securityFeatures": {
+        "csrfTokens": [],
+        "cookies": [],
+        "headers": []
+      }
+    },
+    {
+      "url": "https://trial.1office.vn/crm",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "metaTags": [],
+      "cssFiles": [],
+      "jsFiles": [],
+      "inlineStyles": [],
+      "inlineScripts": [],
+      "forms": [],
+      "inputs": [],
+      "buttons": [],
+      "links": [],
+      "modules": [],
+      "navigation": [],
+      "apiEndpoints": [],
+      "frameworks": [],
+      "securityFeatures": {
+        "csrfTokens": [],
+        "cookies": [],
+        "headers": []
+      }
+    },
+    {
+      "url": "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Fwarehouse",
+      "status": 200,
+      "accessible": true,
+      "title": "1Office",
+      "metaTags": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        }
+      ],
+      "cssFiles": [],
+      "jsFiles": [],
+      "inlineStyles": [],
+      "inlineScripts": [
+        {
+          "index": 1,
+          "content": "var baseURL = \"https://trial.1office.vn\";\nvar styleURL = \"/packages/4x/style/\";\nvar VERSION = \"1751618734753\";\nvar MOBILE = false;\nvar APP_NATIVE = false;\nvar APP_TOKEN = null;\nvar APP_DEVICE = null;\nvar ANDROID_ID = \"vn.oneoffice.oneoffice\";\nvar IOS_ID = \"1272801903\";\nvar HTTP_X_REQUESTED_WITH = \"\";\nvar $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,e){a.raw=e;return a};$jscomp.ASSUME_ES5=!1;...",
+          "length": 19002
+        },
+        {
+          "index": 2,
+          "content": "// Define translations for JavaScript\n    window.TRANSLATIONS = {\n        view_on_app: \"View on 1Office app?\",\n        agree: \"Agree\",\n        skip: \"Skip\",\n        skype_message: \"You are opening the link via Skype, unfortunately this application does not support automatic switching to the 1Office app version. For a better experience, please choose to share the link to your default browser.\",\n        close: \"Close\"\n    };\n\n    if (window.MOBILE) {\n        let originHeight = window.visualViewpor...",
+          "length": 3689
+        },
+        {
+          "index": 3,
+          "content": "function validType(e) {\n        if (typeof e != 'undefined') {\n            var type = e.getAttribute('data-type') || '',\n                loginURL = e.getAttribute('data-url') || '';\n\n            if (type === 'LDAP') {\n                document.getElementById('form-login').setAttribute('action', loginURL);\n                document.getElementById('ldap').style.display = 'block';\n                document.getElementById('orline').style.display = 'none';\n            }\n        }\n    }\n\n    function rol...",
+          "length": 2562
+        },
+        {
+          "index": 4,
+          "content": "/**\n     * Get user language from URL, cookie, or browser settings\n     * @returns {string} 'vn' or 'en'\n     */\n    function getUserLanguage() {\n        const urlLang = new URLSearchParams(window.location.search).get('lang');\n        if (['vn', 'en'].includes(urlLang)) return urlLang;\n\n        const cookieLang = \"en\";\n        if (['vn', 'en'].includes(cookieLang)) return cookieLang;\n\n        return (navigator.language || \"en\").startsWith('vi') ? 'vn' : 'en';\n    }\n\n    /**\n     * Update dropdow...",
+          "length": 3159
+        }
+      ],
+      "forms": [
+        {
+          "index": 1,
+          "action": "https://trial.1office.vn/login",
+          "method": "post",
+          "id": "form-login",
+          "hasCSRF": false
+        }
+      ],
+      "inputs": [
+        {
+          "index": 1,
+          "type": "hidden",
+          "name": "url_login",
+          "id": "url-login"
+        },
+        {
+          "index": 2,
+          "type": "hidden",
+          "name": "r",
+          "id": ""
+        },
+        {
+          "index": 3,
+          "type": "hidden",
+          "name": "selected_language",
+          "id": "selected_language"
+        },
+        {
+          "index": 4,
+          "type": "text",
+          "name": "username",
+          "id": "username"
+        },
+        {
+          "index": 5,
+          "type": "password",
+          "name": "userpwd",
+          "id": "userpwd"
+        },
+        {
+          "index": 6,
+          "type": "checkbox",
+          "name": "persistent",
+          "id": "remember"
+        }
+      ],
+      "buttons": [],
+      "links": [
+        {
+          "href": "/login/reset",
+          "text": "Forgot your login password?",
+          "isModule": false
+        }
+      ],
+      "modules": [
+        {
+          "name": "work",
+          "occurrences": 1
+        },
+        {
+          "name": "warehouse",
+          "occurrences": 1
+        }
+      ],
+      "navigation": [],
+      "apiEndpoints": [
+        "https://trial.1office.vn"
+      ],
+      "frameworks": [],
+      "securityFeatures": {
+        "csrfTokens": [],
+        "cookies": [],
+        "headers": []
+      }
+    },
+    {
+      "url": "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Ffinance",
+      "status": 200,
+      "accessible": true,
+      "title": "1Office",
+      "metaTags": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        }
+      ],
+      "cssFiles": [],
+      "jsFiles": [],
+      "inlineStyles": [],
+      "inlineScripts": [
+        {
+          "index": 1,
+          "content": "var baseURL = \"https://trial.1office.vn\";\nvar styleURL = \"/packages/4x/style/\";\nvar VERSION = \"1751618734753\";\nvar MOBILE = false;\nvar APP_NATIVE = false;\nvar APP_TOKEN = null;\nvar APP_DEVICE = null;\nvar ANDROID_ID = \"vn.oneoffice.oneoffice\";\nvar IOS_ID = \"1272801903\";\nvar HTTP_X_REQUESTED_WITH = \"\";\nvar $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,e){a.raw=e;return a};$jscomp.ASSUME_ES5=!1;...",
+          "length": 19002
+        },
+        {
+          "index": 2,
+          "content": "// Define translations for JavaScript\n    window.TRANSLATIONS = {\n        view_on_app: \"View on 1Office app?\",\n        agree: \"Agree\",\n        skip: \"Skip\",\n        skype_message: \"You are opening the link via Skype, unfortunately this application does not support automatic switching to the 1Office app version. For a better experience, please choose to share the link to your default browser.\",\n        close: \"Close\"\n    };\n\n    if (window.MOBILE) {\n        let originHeight = window.visualViewpor...",
+          "length": 3689
+        },
+        {
+          "index": 3,
+          "content": "function validType(e) {\n        if (typeof e != 'undefined') {\n            var type = e.getAttribute('data-type') || '',\n                loginURL = e.getAttribute('data-url') || '';\n\n            if (type === 'LDAP') {\n                document.getElementById('form-login').setAttribute('action', loginURL);\n                document.getElementById('ldap').style.display = 'block';\n                document.getElementById('orline').style.display = 'none';\n            }\n        }\n    }\n\n    function rol...",
+          "length": 2562
+        },
+        {
+          "index": 4,
+          "content": "/**\n     * Get user language from URL, cookie, or browser settings\n     * @returns {string} 'vn' or 'en'\n     */\n    function getUserLanguage() {\n        const urlLang = new URLSearchParams(window.location.search).get('lang');\n        if (['vn', 'en'].includes(urlLang)) return urlLang;\n\n        const cookieLang = \"en\";\n        if (['vn', 'en'].includes(cookieLang)) return cookieLang;\n\n        return (navigator.language || \"en\").startsWith('vi') ? 'vn' : 'en';\n    }\n\n    /**\n     * Update dropdow...",
+          "length": 3159
+        }
+      ],
+      "forms": [
+        {
+          "index": 1,
+          "action": "https://trial.1office.vn/login",
+          "method": "post",
+          "id": "form-login",
+          "hasCSRF": false
+        }
+      ],
+      "inputs": [
+        {
+          "index": 1,
+          "type": "hidden",
+          "name": "url_login",
+          "id": "url-login"
+        },
+        {
+          "index": 2,
+          "type": "hidden",
+          "name": "r",
+          "id": ""
+        },
+        {
+          "index": 3,
+          "type": "hidden",
+          "name": "selected_language",
+          "id": "selected_language"
+        },
+        {
+          "index": 4,
+          "type": "text",
+          "name": "username",
+          "id": "username"
+        },
+        {
+          "index": 5,
+          "type": "password",
+          "name": "userpwd",
+          "id": "userpwd"
+        },
+        {
+          "index": 6,
+          "type": "checkbox",
+          "name": "persistent",
+          "id": "remember"
+        }
+      ],
+      "buttons": [],
+      "links": [
+        {
+          "href": "/login/reset",
+          "text": "Forgot your login password?",
+          "isModule": false
+        }
+      ],
+      "modules": [
+        {
+          "name": "work",
+          "occurrences": 1
+        },
+        {
+          "name": "finance",
+          "occurrences": 1
+        }
+      ],
+      "navigation": [],
+      "apiEndpoints": [
+        "https://trial.1office.vn"
+      ],
+      "frameworks": [],
+      "securityFeatures": {
+        "csrfTokens": [],
+        "cookies": [],
+        "headers": []
+      }
+    },
+    {
+      "url": "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Fadmin",
+      "status": 200,
+      "accessible": true,
+      "title": "1Office",
+      "metaTags": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        }
+      ],
+      "cssFiles": [],
+      "jsFiles": [],
+      "inlineStyles": [],
+      "inlineScripts": [
+        {
+          "index": 1,
+          "content": "var baseURL = \"https://trial.1office.vn\";\nvar styleURL = \"/packages/4x/style/\";\nvar VERSION = \"1751618734753\";\nvar MOBILE = false;\nvar APP_NATIVE = false;\nvar APP_TOKEN = null;\nvar APP_DEVICE = null;\nvar ANDROID_ID = \"vn.oneoffice.oneoffice\";\nvar IOS_ID = \"1272801903\";\nvar HTTP_X_REQUESTED_WITH = \"\";\nvar $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,e){a.raw=e;return a};$jscomp.ASSUME_ES5=!1;...",
+          "length": 19002
+        },
+        {
+          "index": 2,
+          "content": "// Define translations for JavaScript\n    window.TRANSLATIONS = {\n        view_on_app: \"View on 1Office app?\",\n        agree: \"Agree\",\n        skip: \"Skip\",\n        skype_message: \"You are opening the link via Skype, unfortunately this application does not support automatic switching to the 1Office app version. For a better experience, please choose to share the link to your default browser.\",\n        close: \"Close\"\n    };\n\n    if (window.MOBILE) {\n        let originHeight = window.visualViewpor...",
+          "length": 3689
+        },
+        {
+          "index": 3,
+          "content": "function validType(e) {\n        if (typeof e != 'undefined') {\n            var type = e.getAttribute('data-type') || '',\n                loginURL = e.getAttribute('data-url') || '';\n\n            if (type === 'LDAP') {\n                document.getElementById('form-login').setAttribute('action', loginURL);\n                document.getElementById('ldap').style.display = 'block';\n                document.getElementById('orline').style.display = 'none';\n            }\n        }\n    }\n\n    function rol...",
+          "length": 2562
+        },
+        {
+          "index": 4,
+          "content": "/**\n     * Get user language from URL, cookie, or browser settings\n     * @returns {string} 'vn' or 'en'\n     */\n    function getUserLanguage() {\n        const urlLang = new URLSearchParams(window.location.search).get('lang');\n        if (['vn', 'en'].includes(urlLang)) return urlLang;\n\n        const cookieLang = \"en\";\n        if (['vn', 'en'].includes(cookieLang)) return cookieLang;\n\n        return (navigator.language || \"en\").startsWith('vi') ? 'vn' : 'en';\n    }\n\n    /**\n     * Update dropdow...",
+          "length": 3159
+        }
+      ],
+      "forms": [
+        {
+          "index": 1,
+          "action": "https://trial.1office.vn/login",
+          "method": "post",
+          "id": "form-login",
+          "hasCSRF": false
+        }
+      ],
+      "inputs": [
+        {
+          "index": 1,
+          "type": "hidden",
+          "name": "url_login",
+          "id": "url-login"
+        },
+        {
+          "index": 2,
+          "type": "hidden",
+          "name": "r",
+          "id": ""
+        },
+        {
+          "index": 3,
+          "type": "hidden",
+          "name": "selected_language",
+          "id": "selected_language"
+        },
+        {
+          "index": 4,
+          "type": "text",
+          "name": "username",
+          "id": "username"
+        },
+        {
+          "index": 5,
+          "type": "password",
+          "name": "userpwd",
+          "id": "userpwd"
+        },
+        {
+          "index": 6,
+          "type": "checkbox",
+          "name": "persistent",
+          "id": "remember"
+        }
+      ],
+      "buttons": [],
+      "links": [
+        {
+          "href": "/login/reset",
+          "text": "Forgot your login password?",
+          "isModule": false
+        }
+      ],
+      "modules": [
+        {
+          "name": "work",
+          "occurrences": 1
+        },
+        {
+          "name": "admin",
+          "occurrences": 1
+        }
+      ],
+      "navigation": [],
+      "apiEndpoints": [
+        "https://trial.1office.vn"
+      ],
+      "frameworks": [],
+      "securityFeatures": {
+        "csrfTokens": [],
+        "cookies": [],
+        "headers": []
+      }
+    },
+    {
+      "url": "https://trial.1office.vn/dashboard",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "metaTags": [],
+      "cssFiles": [],
+      "jsFiles": [],
+      "inlineStyles": [],
+      "inlineScripts": [],
+      "forms": [],
+      "inputs": [],
+      "buttons": [],
+      "links": [],
+      "modules": [],
+      "navigation": [],
+      "apiEndpoints": [],
+      "frameworks": [],
+      "securityFeatures": {
+        "csrfTokens": [],
+        "cookies": [],
+        "headers": []
+      }
+    },
+    {
+      "url": "https://trial.1office.vn/login",
+      "status": 200,
+      "accessible": true,
+      "title": "1Office",
+      "metaTags": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        }
+      ],
+      "cssFiles": [],
+      "jsFiles": [],
+      "inlineStyles": [],
+      "inlineScripts": [
+        {
+          "index": 1,
+          "content": "var baseURL = \"https://trial.1office.vn\";\nvar styleURL = \"/packages/4x/style/\";\nvar VERSION = \"1751618734753\";\nvar MOBILE = false;\nvar APP_NATIVE = false;\nvar APP_TOKEN = null;\nvar APP_DEVICE = null;\nvar ANDROID_ID = \"vn.oneoffice.oneoffice\";\nvar IOS_ID = \"1272801903\";\nvar HTTP_X_REQUESTED_WITH = \"\";\nvar $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,e){a.raw=e;return a};$jscomp.ASSUME_ES5=!1;...",
+          "length": 19002
+        },
+        {
+          "index": 2,
+          "content": "// Define translations for JavaScript\n    window.TRANSLATIONS = {\n        view_on_app: \"View on 1Office app?\",\n        agree: \"Agree\",\n        skip: \"Skip\",\n        skype_message: \"You are opening the link via Skype, unfortunately this application does not support automatic switching to the 1Office app version. For a better experience, please choose to share the link to your default browser.\",\n        close: \"Close\"\n    };\n\n    if (window.MOBILE) {\n        let originHeight = window.visualViewpor...",
+          "length": 3689
+        },
+        {
+          "index": 3,
+          "content": "function validType(e) {\n        if (typeof e != 'undefined') {\n            var type = e.getAttribute('data-type') || '',\n                loginURL = e.getAttribute('data-url') || '';\n\n            if (type === 'LDAP') {\n                document.getElementById('form-login').setAttribute('action', loginURL);\n                document.getElementById('ldap').style.display = 'block';\n                document.getElementById('orline').style.display = 'none';\n            }\n        }\n    }\n\n    function rol...",
+          "length": 2562
+        },
+        {
+          "index": 4,
+          "content": "/**\n     * Get user language from URL, cookie, or browser settings\n     * @returns {string} 'vn' or 'en'\n     */\n    function getUserLanguage() {\n        const urlLang = new URLSearchParams(window.location.search).get('lang');\n        if (['vn', 'en'].includes(urlLang)) return urlLang;\n\n        const cookieLang = \"en\";\n        if (['vn', 'en'].includes(cookieLang)) return cookieLang;\n\n        return (navigator.language || \"en\").startsWith('vi') ? 'vn' : 'en';\n    }\n\n    /**\n     * Update dropdow...",
+          "length": 3159
+        }
+      ],
+      "forms": [
+        {
+          "index": 1,
+          "action": "https://trial.1office.vn/login",
+          "method": "post",
+          "id": "form-login",
+          "hasCSRF": false
+        }
+      ],
+      "inputs": [
+        {
+          "index": 1,
+          "type": "hidden",
+          "name": "url_login",
+          "id": "url-login"
+        },
+        {
+          "index": 2,
+          "type": "hidden",
+          "name": "selected_language",
+          "id": "selected_language"
+        },
+        {
+          "index": 3,
+          "type": "text",
+          "name": "username",
+          "id": "username"
+        },
+        {
+          "index": 4,
+          "type": "password",
+          "name": "userpwd",
+          "id": "userpwd"
+        },
+        {
+          "index": 5,
+          "type": "checkbox",
+          "name": "persistent",
+          "id": "remember"
+        }
+      ],
+      "buttons": [],
+      "links": [
+        {
+          "href": "/login/reset",
+          "text": "Forgot your login password?",
+          "isModule": false
+        }
+      ],
+      "modules": [
+        {
+          "name": "work",
+          "occurrences": 1
+        }
+      ],
+      "navigation": [],
+      "apiEndpoints": [
+        "https://trial.1office.vn"
+      ],
+      "frameworks": [],
+      "securityFeatures": {
+        "csrfTokens": [],
+        "cookies": [],
+        "headers": []
+      }
+    },
+    {
+      "url": "https://trial.1office.vn/profile",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "metaTags": [],
+      "cssFiles": [],
+      "jsFiles": [],
+      "inlineStyles": [],
+      "inlineScripts": [],
+      "forms": [],
+      "inputs": [],
+      "buttons": [],
+      "links": [],
+      "modules": [],
+      "navigation": [],
+      "apiEndpoints": [],
+      "frameworks": [],
+      "securityFeatures": {
+        "csrfTokens": [],
+        "cookies": [],
+        "headers": []
+      }
+    },
+    {
+      "url": "https://trial.1office.vn/settings",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "metaTags": [],
+      "cssFiles": [],
+      "jsFiles": [],
+      "inlineStyles": [],
+      "inlineScripts": [],
+      "forms": [],
+      "inputs": [],
+      "buttons": [],
+      "links": [],
+      "modules": [],
+      "navigation": [],
+      "apiEndpoints": [],
+      "frameworks": [],
+      "securityFeatures": {
+        "csrfTokens": [],
+        "cookies": [],
+        "headers": []
+      }
+    }
+  ],
+  "modules": [
+    {
+      "name": "work",
+      "totalOccurrences": 6,
+      "pagesFound": [
+        "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Fwork",
+        "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Fwarehouse",
+        "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Ffinance",
+        "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Fadmin",
+        "https://trial.1office.vn/login"
+      ]
+    },
+    {
+      "name": "warehouse",
+      "totalOccurrences": 1,
+      "pagesFound": [
+        "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Fwarehouse"
+      ]
+    },
+    {
+      "name": "finance",
+      "totalOccurrences": 1,
+      "pagesFound": [
+        "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Ffinance"
+      ]
+    },
+    {
+      "name": "admin",
+      "totalOccurrences": 1,
+      "pagesFound": [
+        "https://trial.1office.vn/login?r=https%3A%2F%2Ftrial.1office.vn%2Fadmin"
+      ]
+    }
+  ],
+  "apiEndpoints": [
+    "https://trial.1office.vn"
+  ],
+  "securityAnalysis": {
+    "csrfProtection": false,
+    "httpsOnly": true,
+    "cookiesSeen": [],
+    "securityHeaders": []
+  },
+  "errors": []
+}

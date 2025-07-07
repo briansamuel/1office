@@ -1,0 +1,168 @@
+{
+  "url": "https://trial.1office.vn",
+  "finalUrl": "https://trial.1office.vn/login",
+  "timestamp": "2025-07-06T08:25:47.084Z",
+  "response": {
+    "statusCode": 200,
+    "headers": {
+      "server": "nginx",
+      "date": "Sun, 06 Jul 2025 08:25:47 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "vary": "Accept-Encoding, Accept-Encoding",
+      "set-cookie": [
+        "PHPSESSID=56o85qo2r2hs73nphorb9eus8s; path=/; domain=.trial.1office.vn; secure; HttpOnly",
+        "1office_fe18c435a9237e72155e94ce4f7afff97dfd2b73language=TDI0NXk5Uks2VEdG; expires=Tue, 14 Oct 2025 08:25:46 GMT; Max-Age=8640000; path=/; secure; HttpOnly; SameSite=None"
+      ],
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate",
+      "pragma": "no-cache",
+      "csrf-token-cache": "ce27e5f71c6e4a71659fd0c7d427e97d",
+      "access-control-allow-origin": "https://apis.1office.vn",
+      "access-control-allow-credentials": "true",
+      "access-control-max-age": "86400",
+      "alt-svc": "h3-23=\":443\"; ma=86400",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "ALLOWALL",
+      "content-encoding": "gzip"
+    }
+  },
+  "analysis": {
+    "title": "1Office",
+    "metaTags": [
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+      }
+    ],
+    "cssFiles": [],
+    "jsFiles": [],
+    "inlineStyles": [],
+    "inlineScripts": [
+      {
+        "index": 1,
+        "content": "var baseURL = \"https://trial.1office.vn\";\nvar styleURL = \"/packages/4x/style/\";\nvar VERSION = \"1751618734753\";\nvar MOBILE = false;\nvar APP_NATIVE = false;\nvar APP_TOKEN = null;\nvar APP_DEVICE = null;\n...",
+        "length": 19002
+      },
+      {
+        "index": 2,
+        "content": "// Define translations for JavaScript\n    window.TRANSLATIONS = {\n        view_on_app: \"View on 1Office app?\",\n        agree: \"Agree\",\n        skip: \"Skip\",\n        skype_message: \"You are opening the...",
+        "length": 3689
+      },
+      {
+        "index": 3,
+        "content": "function validType(e) {\n        if (typeof e != 'undefined') {\n            var type = e.getAttribute('data-type') || '',\n                loginURL = e.getAttribute('data-url') || '';\n\n            if (t...",
+        "length": 2562
+      },
+      {
+        "index": 4,
+        "content": "/**\n     * Get user language from URL, cookie, or browser settings\n     * @returns {string} 'vn' or 'en'\n     */\n    function getUserLanguage() {\n        const urlLang = new URLSearchParams(window.loc...",
+        "length": 3159
+      }
+    ],
+    "forms": [
+      {
+        "index": 1,
+        "action": "https://trial.1office.vn/login",
+        "method": "post",
+        "id": "form-login",
+        "className": "login-form fade-up",
+        "html": "<form id=\"form-login\" class=\"login-form fade-up\" action=\"https://trial.1office.vn/login\" method=\"post\">\n                <div id=\"login-form-base\">\n                    <input id=\"url-login\" type=\"hidden\" name=\"url_login\" value=\"https://trial.1office.vn/login\"/>\n\n                                        <div class=\"header-container\">\n                        <div class=\"form-title\">\n                            Login                        </div>\n                        <div class=\"language-selector-..."
+      }
+    ],
+    "inputs": [
+      {
+        "index": 1,
+        "type": "hidden",
+        "name": "url_login",
+        "id": "url-login",
+        "placeholder": "",
+        "className": "",
+        "required": false
+      },
+      {
+        "index": 2,
+        "type": "hidden",
+        "name": "selected_language",
+        "id": "selected_language",
+        "placeholder": "",
+        "className": "",
+        "required": false
+      },
+      {
+        "index": 3,
+        "type": "text",
+        "name": "username",
+        "id": "username",
+        "placeholder": "",
+        "className": "form-control",
+        "required": true
+      },
+      {
+        "index": 4,
+        "type": "password",
+        "name": "userpwd",
+        "id": "userpwd",
+        "placeholder": "",
+        "className": "form-control",
+        "required": true
+      },
+      {
+        "index": 5,
+        "type": "checkbox",
+        "name": "persistent",
+        "id": "remember",
+        "placeholder": "",
+        "className": "",
+        "required": false
+      }
+    ],
+    "buttons": [
+      {
+        "index": 1,
+        "type": "submit",
+        "id": "",
+        "className": "submit form-btn",
+        "text": "Login"
+      }
+    ],
+    "frameworks": [],
+    "bodyContent": "\n    <div class=\"wrap\">\n    <div id=\"login-page\" login-count=\"0\" style=\"background-image: url(/packages/4x/style/packages/login/images/bg.svg)\">\n        <div class=\"login-wrap\">\n            \n<div class=\"login-left\">\n    <div class=\"fade-down\">\n        <img src=\"/packages/4x/style/packages/login/images/logo.svg\" />\n\n                    <div style=\"margin-bottom: 8px; font-size: 28px; font-weight: 500\">\n                Not just a <span style=\"color: var(--primary)\">MANAGEMENT SOLUTION</span>\n            </div>\n\n            <div style=\"text-align: right; color: var(--color-text-orange); font-size: 18px\">Work anytime, anywhere</div>\n            </div>\n\n    <div style=\"text-align: center\" class=\"fade-right login-left-image\">\n        <img src=\"/packages/4x/style/packages/login/images/bg1.svg\" style=\"width: 95%\" />\n    </div>\n</div>\n\n            <div class=\"login-right\">\n                <form id=\"form-login\" class=\"login-form fade-up\" action=\"https://trial.1office.vn/login\" method=\"post\">\n   ..."
+  },
+  "loginFormAnalysis": {
+    "emailInputs": [
+      {
+        "index": 3,
+        "type": "text",
+        "name": "username",
+        "id": "username",
+        "placeholder": "",
+        "className": "form-control",
+        "required": true
+      }
+    ],
+    "passwordInputs": [
+      {
+        "index": 4,
+        "type": "password",
+        "name": "userpwd",
+        "id": "userpwd",
+        "placeholder": "",
+        "className": "form-control",
+        "required": true
+      }
+    ],
+    "submitButtons": [
+      {
+        "index": 1,
+        "type": "submit",
+        "id": "",
+        "className": "submit form-btn",
+        "text": "Login"
+      }
+    ],
+    "hasLoginForm": true
+  }
+}
