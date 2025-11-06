@@ -1,0 +1,135 @@
+{
+  "timestamp": "2025-07-06T08:37:53.422Z",
+  "loginAttempted": true,
+  "loginSuccessful": false,
+  "modules": [
+    {
+      "path": "/work",
+      "name": "Work Management",
+      "status": 302,
+      "accessible": false,
+      "title": "",
+      "hasContent": false,
+      "features": [],
+      "apiEndpoints": [],
+      "forms": [],
+      "navigation": []
+    },
+    {
+      "path": "/hrm",
+      "name": "Human Resources",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "hasContent": false,
+      "features": [],
+      "apiEndpoints": [],
+      "forms": [],
+      "navigation": []
+    },
+    {
+      "path": "/crm",
+      "name": "Customer Relations",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "hasContent": false,
+      "features": [],
+      "apiEndpoints": [],
+      "forms": [],
+      "navigation": []
+    },
+    {
+      "path": "/warehouse",
+      "name": "Warehouse Management",
+      "status": 302,
+      "accessible": false,
+      "title": "",
+      "hasContent": false,
+      "features": [],
+      "apiEndpoints": [],
+      "forms": [],
+      "navigation": []
+    },
+    {
+      "path": "/finance",
+      "name": "Finance Management",
+      "status": 302,
+      "accessible": false,
+      "title": "",
+      "hasContent": false,
+      "features": [],
+      "apiEndpoints": [],
+      "forms": [],
+      "navigation": []
+    },
+    {
+      "path": "/admin",
+      "name": "Administration",
+      "status": 302,
+      "accessible": false,
+      "title": "",
+      "hasContent": false,
+      "features": [],
+      "apiEndpoints": [],
+      "forms": [],
+      "navigation": []
+    },
+    {
+      "path": "/dashboard",
+      "name": "Dashboard",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "hasContent": false,
+      "features": [],
+      "apiEndpoints": [],
+      "forms": [],
+      "navigation": []
+    },
+    {
+      "path": "/profile",
+      "name": "User Profile",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "hasContent": false,
+      "features": [],
+      "apiEndpoints": [],
+      "forms": [],
+      "navigation": []
+    },
+    {
+      "path": "/settings",
+      "name": "Settings",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "hasContent": false,
+      "features": [],
+      "apiEndpoints": [],
+      "forms": [],
+      "navigation": []
+    },
+    {
+      "path": "/reports",
+      "name": "Reports",
+      "status": 200,
+      "accessible": true,
+      "title": "",
+      "hasContent": false,
+      "features": [],
+      "apiEndpoints": [],
+      "forms": [],
+      "navigation": []
+    }
+  ],
+  "summary": {
+    "totalModules": 10,
+    "accessibleModules": 6,
+    "modulesWithContent": 0,
+    "loginRequired": true,
+    "detectedFeatures": 0,
+    "totalApiEndpoints": 0
+  }
+}

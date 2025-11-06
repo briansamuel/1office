@@ -1,6 +1,6 @@
-# 1Office - Laravel Modular Application
+# 1Office - Laravel Modular API
 
-A scalable Laravel + Vue 3 modular application inspired by office management systems, featuring Work, HRM, CRM, and Warehouse modules.
+A scalable Laravel API-only modular application for enterprise office management systems, featuring Work, HRM, CRM, and Warehouse modules with advanced authentication and authorization.
 
 ## 🏗️ Architecture
 
@@ -20,49 +20,71 @@ This application follows a modular architecture pattern with the following struc
 
 ## 🚀 Features
 
-### Work Module
-- ✅ Task management with Kanban board
+### 🔐 Advanced Authentication & Authorization
+- ✅ Role-Based Access Control (RBAC) with hierarchical roles
+- ✅ Granular permission system with scope-based access (own, department, organization, all)
+- ✅ Multi-organization support with department hierarchy
+- ✅ Laravel Sanctum API authentication with token management
+- ✅ Comprehensive audit logging for security compliance
+- ✅ Session management with device tracking
+- ✅ Password policies and forced password changes
+
+### 🏢 Organization Management
+- ✅ Multi-tenant organization structure
+- ✅ Hierarchical department management
+- ✅ Employee management with reporting relationships
+- ✅ Flexible role assignment with expiration dates
+- ✅ Organization-specific settings and configurations
+
+### 📋 Work Module
+- ✅ Task management with advanced permissions
 - ✅ Task status tracking (Todo, In Progress, In Review, Completed)
 - ✅ Priority levels (Low, Medium, High, Urgent)
-- ✅ Task assignment and due dates
-- ✅ Real-time status updates
-- ✅ Task filtering and search
+- ✅ Task assignment with scope-based access control
+- ✅ Project management integration
+- ✅ Task filtering and search with permission checks
 
-### HRM Module (Planned)
-- Employee management
-- Attendance tracking
-- Leave management
-- Performance reviews
+### 👥 HRM Module (API Ready)
+- Employee lifecycle management
+- Attendance tracking and reporting
+- Leave management system
+- Performance review workflows
+- Payroll integration
+- Recruitment and onboarding
 
-### CRM Module (Planned)
-- Customer management
-- Lead tracking
-- Deal pipeline
-- Sales reporting
+### 🤝 CRM Module (API Ready)
+- Customer relationship management
+- Lead tracking and conversion
+- Sales pipeline management
+- Deal management and forecasting
+- Customer communication history
 
-### Warehouse Module (Planned)
-- Product catalog
-- Inventory management
-- Order processing
-- Stock tracking
+### 📦 Warehouse Module (API Ready)
+- Product catalog management
+- Inventory tracking and control
+- Order processing workflows
+- Stock level monitoring
+- Supplier management
 
 ## 🛠️ Tech Stack
 
-**Backend:**
+**Backend API:**
 - Laravel 10.x (PHP 8.3+)
-- MySQL/PostgreSQL
+- MySQL/PostgreSQL with optimized indexing
 - Laravel Sanctum (API Authentication)
-- Repository Pattern
-- Service Layer Pattern
-- Observer Pattern
+- Role-Based Access Control (RBAC)
+- Repository Pattern for data access
+- Service Layer Pattern for business logic
+- Observer Pattern for model events
+- Comprehensive audit logging
+- Multi-tenant architecture
 
-**Frontend:**
-- Vue 3 (Composition API)
-- Vite (Build tool)
-- Tailwind CSS
-- Pinia (State management)
-- Vue Router
-- Axios (HTTP client)
+**Architecture Patterns:**
+- Modular monolith structure
+- Domain-driven design principles
+- SOLID principles implementation
+- Clean architecture layers
+- Event-driven architecture ready
 
 ## 📋 Requirements
 

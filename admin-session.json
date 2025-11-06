@@ -1,0 +1,9 @@
+{
+  "credentials": {
+    "username": "admin",
+    "password": "admin@123"
+  },
+  "cookies": "PHPSESSID=vkrhti9asi2oiu8pppie700nqt; 1office_fe18c435a9237e72155e94ce4f7afff97dfd2b73language=TDI0NXk5Uks2VEdG; PHPSESSID=2r781lr91ocbiijic66tdl8i9f; 1office_fe18c435a9237e72155e94ce4f7afff97dfd2b73language=TDI0NXk5Ulo2VEdG; 1office_fe18c435a9237e72155e94ce4f7afff97dfd2b73uid=TDI0N3k5UU52QT09",
+  "csrfToken": null,
+  "timestamp": "2025-07-06T08:43:23.156Z"
+}

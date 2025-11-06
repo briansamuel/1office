@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<head>
+    <title>1Office</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script defer>
+var baseURL = "https://trial.1office.vn";
+var styleURL = "/packages/4x/style/";
+var VERSION = "1751618734753";
+var MOBILE = false;
+var APP_NATIVE = false;
+var APP_TOKEN = null;
+var APP_DEVICE = null;
+var ANDROID_ID = "vn.oneoffice.oneoffice";
+var IOS_ID = "1272801903";
+var HTTP_X_REQUESTED_WITH = "";
+var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,e){a.raw=e;return a};$jscomp.ASSUME_ES5=!1;$jscomp.ASSUME_NO_NATIVE_MAP=!1;$jscomp.ASSUME_NO_NATIVE_SET=!1;$jscomp.SIMPLE_FROUND_POLYFILL=!1;$jscomp.ISOLATE_POLYFILLS=!1;$jscomp.FORCE_POLYFILL_PROMISE=!1;$jscomp.FORCE_POLYFILL_PROMISE_WHEN_NO_UNHANDLED_REJECTION=!1;  $jscomp.defineProperty=$jscomp.ASSUME_ES5||"function"==typeof Object.defineProperties?Object.defineProperty:function(a,e,f){if(a==Array.prototype||a==Object.prototype)return a;a[e]=f.value;return a};$jscomp.getGlobal=function(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var e=0;e<a.length;++e){var f=a[e];if(f&&f.Math==Math)return f}throw Error("Cannot find global object");};$jscomp.global=$jscomp.getGlobal(this);  $jscomp.IS_SYMBOL_NATIVE="function"===typeof Symbol&&"symbol"===typeof Symbol("x");$jscomp.TRUST_ES6_POLYFILLS=!$jscomp.ISOLATE_POLYFILLS||$jscomp.IS_SYMBOL_NATIVE;$jscomp.polyfills={};$jscomp.propertyToPolyfillSymbol={};$jscomp.POLYFILL_PREFIX="$jscp$";var $jscomp$lookupPolyfilledValue=function(a,e){var f=$jscomp.propertyToPolyfillSymbol[e];if(null==f)return a[e];f=a[f];return void 0!==f?f:a[e]};  $jscomp.polyfill=function(a,e,f,d){e&&($jscomp.ISOLATE_POLYFILLS?$jscomp.polyfillIsolated(a,e,f,d):$jscomp.polyfillUnisolated(a,e,f,d))};$jscomp.polyfillUnisolated=function(a,e,f,d){f=$jscomp.global;a=a.split(".");for(d=0;d<a.length-1;d++){var c=a[d];if(!(c in f))return;f=f[c]}a=a[a.length-1];d=f[a];e=e(d);e!=d&&null!=e&&$jscomp.defineProperty(f,a,{configurable:!0,writable:!0,value:e})};  $jscomp.polyfillIsolated=function(a,e,f,d){var c=a.split(".");a=1===c.length;d=c[0];d=!a&&d in $jscomp.polyfills?$jscomp.polyfills:$jscomp.global;for(var h=0;h<c.length-1;h++){var b=c[h];if(!(b in d))return;d=d[b]}c=c[c.length-1];f=$jscomp.IS_SYMBOL_NATIVE&&"es6"===f?d[c]:null;e=e(f);null!=e&&(a?$jscomp.defineProperty($jscomp.polyfills,c,{configurable:!0,writable:!0,value:e}):e!==f&&(void 0===$jscomp.propertyToPolyfillSymbol[c]&&(f=1E9*Math.random()>>>0,$jscomp.propertyToPolyfillSymbol[c]=$jscomp.IS_SYMBOL_NATIVE?  $jscomp.global.Symbol(c):$jscomp.POLYFILL_PREFIX+f+"$"+c),$jscomp.defineProperty(d,$jscomp.propertyToPolyfillSymbol[c],{configurable:!0,writable:!0,value:e})))};$jscomp.underscoreProtoCanBeSet=function(){var a={a:!0},e={};try{return e.__proto__=a,e.a}catch(f){}return!1};  $jscomp.setPrototypeOf=$jscomp.TRUST_ES6_POLYFILLS&&"function"==typeof Object.setPrototypeOf?Object.setPrototypeOf:$jscomp.underscoreProtoCanBeSet()?function(a,e){a.__proto__=e;if(a.__proto__!==e)throw new TypeError(a+" is not extensible");return a}:null;$jscomp.arrayIteratorImpl=function(a){var e=0;return function(){return e<a.length?{done:!1,value:a[e++]}:{done:!0}}};$jscomp.arrayIterator=function(a){return{next:$jscomp.arrayIteratorImpl(a)}};  $jscomp.makeIterator=function(a){var e="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return e?e.call(a):$jscomp.arrayIterator(a)};$jscomp.generator={};$jscomp.generator.ensureIteratorResultIsObject_=function(a){if(!(a instanceof Object))throw new TypeError("Iterator result "+a+" is not an object");};  $jscomp.generator.Context=function(){this.isRunning_=!1;this.yieldAllIterator_=null;this.yieldResult=void 0;this.nextAddress=1;this.finallyAddress_=this.catchAddress_=0;this.finallyContexts_=this.abruptCompletion_=null};$jscomp.generator.Context.prototype.start_=function(){if(this.isRunning_)throw new TypeError("Generator is already running");this.isRunning_=!0};$jscomp.generator.Context.prototype.stop_=function(){this.isRunning_=!1};  $jscomp.generator.Context.prototype.jumpToErrorHandler_=function(){this.nextAddress=this.catchAddress_||this.finallyAddress_};$jscomp.generator.Context.prototype.next_=function(a){this.yieldResult=a};$jscomp.generator.Context.prototype.throw_=function(a){this.abruptCompletion_={exception:a,isException:!0};this.jumpToErrorHandler_()};$jscomp.generator.Context.prototype.return=function(a){this.abruptCompletion_={return:a};this.nextAddress=this.finallyAddress_};  $jscomp.generator.Context.prototype.jumpThroughFinallyBlocks=function(a){this.abruptCompletion_={jumpTo:a};this.nextAddress=this.finallyAddress_};$jscomp.generator.Context.prototype.yield=function(a,e){this.nextAddress=e;return{value:a}};$jscomp.generator.Context.prototype.yieldAll=function(a,e){a=$jscomp.makeIterator(a);var f=a.next();$jscomp.generator.ensureIteratorResultIsObject_(f);if(f.done)this.yieldResult=f.value,this.nextAddress=e;else return this.yieldAllIterator_=a,this.yield(f.value,e)};  $jscomp.generator.Context.prototype.jumpTo=function(a){this.nextAddress=a};$jscomp.generator.Context.prototype.jumpToEnd=function(){this.nextAddress=0};$jscomp.generator.Context.prototype.setCatchFinallyBlocks=function(a,e){this.catchAddress_=a;void 0!=e&&(this.finallyAddress_=e)};$jscomp.generator.Context.prototype.setFinallyBlock=function(a){this.catchAddress_=0;this.finallyAddress_=a||0};$jscomp.generator.Context.prototype.leaveTryBlock=function(a,e){this.nextAddress=a;this.catchAddress_=e||0};  $jscomp.generator.Context.prototype.enterCatchBlock=function(a){this.catchAddress_=a||0;a=this.abruptCompletion_.exception;this.abruptCompletion_=null;return a};$jscomp.generator.Context.prototype.enterFinallyBlock=function(a,e,f){f?this.finallyContexts_[f]=this.abruptCompletion_:this.finallyContexts_=[this.abruptCompletion_];this.catchAddress_=a||0;this.finallyAddress_=e||0};  $jscomp.generator.Context.prototype.leaveFinallyBlock=function(a,e){e=this.finallyContexts_.splice(e||0)[0];if(e=this.abruptCompletion_=this.abruptCompletion_||e){if(e.isException)return this.jumpToErrorHandler_();void 0!=e.jumpTo&&this.finallyAddress_<e.jumpTo?(this.nextAddress=e.jumpTo,this.abruptCompletion_=null):this.nextAddress=this.finallyAddress_}else this.nextAddress=a};$jscomp.generator.Context.prototype.forIn=function(a){return new $jscomp.generator.Context.PropertyIterator(a)};  $jscomp.generator.Context.PropertyIterator=function(a){this.object_=a;this.properties_=[];for(var e in a)this.properties_.push(e);this.properties_.reverse()};$jscomp.generator.Context.PropertyIterator.prototype.getNext=function(){for(;0<this.properties_.length;){var a=this.properties_.pop();if(a in this.object_)return a}return null};$jscomp.generator.Engine_=function(a){this.context_=new $jscomp.generator.Context;this.program_=a};  $jscomp.generator.Engine_.prototype.next_=function(a){this.context_.start_();if(this.context_.yieldAllIterator_)return this.yieldAllStep_(this.context_.yieldAllIterator_.next,a,this.context_.next_);this.context_.next_(a);return this.nextStep_()};  $jscomp.generator.Engine_.prototype.return_=function(a){this.context_.start_();var e=this.context_.yieldAllIterator_;if(e)return this.yieldAllStep_("return"in e?e["return"]:function(f){return{value:f,done:!0}},a,this.context_.return);this.context_.return(a);return this.nextStep_()};  $jscomp.generator.Engine_.prototype.throw_=function(a){this.context_.start_();if(this.context_.yieldAllIterator_)return this.yieldAllStep_(this.context_.yieldAllIterator_["throw"],a,this.context_.next_);this.context_.throw_(a);return this.nextStep_()};  $jscomp.generator.Engine_.prototype.yieldAllStep_=function(a,e,f){try{var d=a.call(this.context_.yieldAllIterator_,e);$jscomp.generator.ensureIteratorResultIsObject_(d);if(!d.done)return this.context_.stop_(),d;var c=d.value}catch(h){return this.context_.yieldAllIterator_=null,this.context_.throw_(h),this.nextStep_()}this.context_.yieldAllIterator_=null;f.call(this.context_,c);return this.nextStep_()};  $jscomp.generator.Engine_.prototype.nextStep_=function(){for(;this.context_.nextAddress;)try{var a=this.program_(this.context_);if(a)return this.context_.stop_(),{value:a.value,done:!1}}catch(e){this.context_.yieldResult=void 0,this.context_.throw_(e)}this.context_.stop_();if(this.context_.abruptCompletion_){a=this.context_.abruptCompletion_;this.context_.abruptCompletion_=null;if(a.isException)throw a.exception;return{value:a.return,done:!0}}return{value:void 0,done:!0}};  $jscomp.generator.Generator_=function(a){this.next=function(e){return a.next_(e)};this.throw=function(e){return a.throw_(e)};this.return=function(e){return a.return_(e)};this[Symbol.iterator]=function(){return this}};$jscomp.generator.createGenerator=function(a,e){e=new $jscomp.generator.Generator_(new $jscomp.generator.Engine_(e));$jscomp.setPrototypeOf&&a.prototype&&$jscomp.setPrototypeOf(e,a.prototype);return e};  $jscomp.asyncExecutePromiseGenerator=function(a){function e(d){return a.next(d)}function f(d){return a.throw(d)}return new Promise(function(d,c){function h(b){b.done?d(b.value):Promise.resolve(b.value).then(e,f).then(h,c)}h(a.next())})};$jscomp.asyncExecutePromiseGeneratorFunction=function(a){return $jscomp.asyncExecutePromiseGenerator(a())};$jscomp.asyncExecutePromiseGeneratorProgram=function(a){return $jscomp.asyncExecutePromiseGenerator(new $jscomp.generator.Generator_(new $jscomp.generator.Engine_(a)))};  $jscomp.initSymbol=function(){};$jscomp.polyfill("Symbol",function(a){if(a)return a;var e=function(h,b){this.$jscomp$symbol$id_=h;$jscomp.defineProperty(this,"description",{configurable:!0,writable:!0,value:b})};e.prototype.toString=function(){return this.$jscomp$symbol$id_};var f="jscomp_symbol_"+(1E9*Math.random()>>>0)+"_",d=0,c=function(h){if(this instanceof c)throw new TypeError("Symbol is not a constructor");return new e(f+(h||"")+"_"+d++,h)};return c},"es6","es3");  $jscomp.polyfill("Symbol.iterator",function(a){if(a)return a;a=Symbol("Symbol.iterator");for(var e="Array Int8Array Uint8Array Uint8ClampedArray Int16Array Uint16Array Int32Array Uint32Array Float32Array Float64Array".split(" "),f=0;f<e.length;f++){var d=$jscomp.global[e[f]];"function"===typeof d&&"function"!=typeof d.prototype[a]&&$jscomp.defineProperty(d.prototype,a,{configurable:!0,writable:!0,value:function(){return $jscomp.iteratorPrototype($jscomp.arrayIteratorImpl(this))}})}return a},"es6",  "es3");$jscomp.iteratorPrototype=function(a){a={next:a};a[Symbol.iterator]=function(){return this};return a};  $jscomp.polyfill("Promise",function(a){function e(){this.batch_=null}function f(b){return b instanceof c?b:new c(function(g,k){g(b)})}if(a&&(!($jscomp.FORCE_POLYFILL_PROMISE||$jscomp.FORCE_POLYFILL_PROMISE_WHEN_NO_UNHANDLED_REJECTION&&"undefined"===typeof $jscomp.global.PromiseRejectionEvent)||!$jscomp.global.Promise||-1===$jscomp.global.Promise.toString().indexOf("[native code]")))return a;e.prototype.asyncExecute=function(b){if(null==this.batch_){this.batch_=[];var g=this;this.asyncExecuteFunction(function(){g.executeBatch_()})}this.batch_.push(b)};  var d=$jscomp.global.setTimeout;e.prototype.asyncExecuteFunction=function(b){d(b,0)};e.prototype.executeBatch_=function(){for(;this.batch_&&this.batch_.length;){var b=this.batch_;this.batch_=[];for(var g=0;g<b.length;++g){var k=b[g];b[g]=null;try{k()}catch(l){this.asyncThrow_(l)}}}this.batch_=null};e.prototype.asyncThrow_=function(b){this.asyncExecuteFunction(function(){throw b;})};var c=function(b){this.state_=0;this.result_=void 0;this.onSettledCallbacks_=[];this.isRejectionHandled_=!1;var g=this.createResolveAndReject_();  try{b(g.resolve,g.reject)}catch(k){g.reject(k)}};c.prototype.createResolveAndReject_=function(){function b(l){return function(m){k||(k=!0,l.call(g,m))}}var g=this,k=!1;return{resolve:b(this.resolveTo_),reject:b(this.reject_)}};c.prototype.resolveTo_=function(b){if(b===this)this.reject_(new TypeError("A Promise cannot resolve to itself"));else if(b instanceof c)this.settleSameAsPromise_(b);else{a:switch(typeof b){case "object":var g=null!=b;break a;case "function":g=!0;break a;default:g=!1}g?this.resolveToNonPromiseObj_(b):  this.fulfill_(b)}};c.prototype.resolveToNonPromiseObj_=function(b){var g=void 0;try{g=b.then}catch(k){this.reject_(k);return}"function"==typeof g?this.settleSameAsThenable_(g,b):this.fulfill_(b)};c.prototype.reject_=function(b){this.settle_(2,b)};c.prototype.fulfill_=function(b){this.settle_(1,b)};c.prototype.settle_=function(b,g){if(0!=this.state_)throw Error("Cannot settle("+b+", "+g+"): Promise already settled in state"+this.state_);this.state_=b;this.result_=g;2===this.state_&&this.scheduleUnhandledRejectionCheck_();  this.executeOnSettledCallbacks_()};c.prototype.scheduleUnhandledRejectionCheck_=function(){var b=this;d(function(){if(b.notifyUnhandledRejection_()){var g=$jscomp.global.console;"undefined"!==typeof g&&g.error(b.result_)}},1)};c.prototype.notifyUnhandledRejection_=function(){if(this.isRejectionHandled_)return!1;var b=$jscomp.global.CustomEvent,g=$jscomp.global.Event,k=$jscomp.global.dispatchEvent;if("undefined"===typeof k)return!0;"function"===typeof b?b=new b("unhandledrejection",{cancelable:!0}):  "function"===typeof g?b=new g("unhandledrejection",{cancelable:!0}):(b=$jscomp.global.document.createEvent("CustomEvent"),b.initCustomEvent("unhandledrejection",!1,!0,b));b.promise=this;b.reason=this.result_;return k(b)};c.prototype.executeOnSettledCallbacks_=function(){if(null!=this.onSettledCallbacks_){for(var b=0;b<this.onSettledCallbacks_.length;++b)h.asyncExecute(this.onSettledCallbacks_[b]);this.onSettledCallbacks_=null}};var h=new e;c.prototype.settleSameAsPromise_=function(b){var g=this.createResolveAndReject_();  b.callWhenSettled_(g.resolve,g.reject)};c.prototype.settleSameAsThenable_=function(b,g){var k=this.createResolveAndReject_();try{b.call(g,k.resolve,k.reject)}catch(l){k.reject(l)}};c.prototype.then=function(b,g){function k(n,p){return"function"==typeof n?function(q){try{l(n(q))}catch(r){m(r)}}:p}var l,m,t=new c(function(n,p){l=n;m=p});this.callWhenSettled_(k(b,l),k(g,m));return t};c.prototype.catch=function(b){return this.then(void 0,b)};c.prototype.callWhenSettled_=function(b,g){function k(){switch(l.state_){case 1:b(l.result_);  break;case 2:g(l.result_);break;default:throw Error("Unexpected state: "+l.state_);}}var l=this;null==this.onSettledCallbacks_?h.asyncExecute(k):this.onSettledCallbacks_.push(k);this.isRejectionHandled_=!0};c.resolve=f;c.reject=function(b){return new c(function(g,k){k(b)})};c.race=function(b){return new c(function(g,k){for(var l=$jscomp.makeIterator(b),m=l.next();!m.done;m=l.next())f(m.value).callWhenSettled_(g,k)})};c.all=function(b){var g=$jscomp.makeIterator(b),k=g.next();return k.done?f([]):new c(function(l,  m){function t(q){return function(r){n[q]=r;p--;0==p&&l(n)}}var n=[],p=0;do n.push(void 0),p++,f(k.value).callWhenSettled_(t(n.length-1),m),k=g.next();while(!k.done)})};return c},"es6","es3");$jscomp.owns=function(a,e){return Object.prototype.hasOwnProperty.call(a,e)};$jscomp.assign=$jscomp.TRUST_ES6_POLYFILLS&&"function"==typeof Object.assign?Object.assign:function(a,e){for(var f=1;f<arguments.length;f++){var d=arguments[f];if(d)for(var c in d)$jscomp.owns(d,c)&&(a[c]=d[c])}return a};  $jscomp.polyfill("Object.assign",function(a){return a||$jscomp.assign},"es6","es3");  (function(a,e){"function"!=typeof Object.assign&&(Object.assign=function(d){if(void 0===d||null===d)throw new TypeError("Cannot convert undefined or null to object");for(var c=Object(d),h=1;h<arguments.length;h++){var b=arguments[h];if(void 0!==b&&null!==b)for(var g in b)b.hasOwnProperty(g)&&(c[g]=b[g])}return c});a.langs=function(d){a.LANGDATA=a.LANGDATA||{};"vn"!==a.LANG&&Object.assign(a.LANGDATA,d.vn||{});Object.assign(a.LANGDATA,d[window.LANG]||{})};a.tt=function(d,c){a.LANGDATA=a.LANGDATA||{};  c=c||{};var h=a.LANGDATA[d];if($.isFunction(h))return h(c);h=h?h.replace(/\{([^}]+)}/img,function(b,g){return c.hasOwnProperty(g)?c[g]:b}):d;return DEBUG?(d={term:"js."+d,trans:h},$("<span>").attr(d).html(h)[0].outerHTML):h};a.trans=function(d,c,h){c=c||{};h=h||{};c.vn&&(c=c[window.LANG]||{});c=c[d]||null;if("function"===typeof c&&"object"===typeof h)return c(h);"string"===typeof c&&(c=c.replace(/\{([^}]+)}/gi,function(b,g){return g in h?h[g]:b}));return c||d};a.SVGICON=function(d,c,h){d.match(/\//i)||  (d="@icons/"+d);var b=window["SVGICON_"+d];if(!b)return"{{can not load icon "+d+"}}";h=void 0===h?"1em":h;b=b.replace(/<svg([^>]*)>/i,'<svg$1 width="'+(void 0===c?"1em":c)+'">');return b=b.replace(/<svg([^>]*)>/i,'<svg$1 height="'+h+'">')};var f={base:a.styleURL,loaderVersion:10,buildTime:a.VERSION,url:function(d){var c,h=a.MOBILE?"mobile":"desktop";if(d.match(/^(https?:|:\/\/)/i))return d;if(c=d.match(/^plugin:(.*)$/i))c=c[1],d=a.DEBUG?"plugins/"+c+".js":"plugins/"+c+".min.js";else if(c=d.match(/^@(.*)$/i)){var b=  "packages";d=c[1];d=d.replace(/\{platform}/i,h);if(c=d.match(/^elem:(.*)$/i))d=c[1],b="elems";d=a.DEBUG?d+".debug.js":d+".js";d="bundle/"+b+"."+d}else a.DEBUG||d.match(/^bundle/i)||d.match(/\.min\.js$/i)||(d=d.replace(/\.js$/i,".min.js"));d=d.replace(/\{device}/i,h);a.LANG&&(d=d.replace(/\{lang}/i,a.LANG));return d},load:function(d){var c,h;return $jscomp.asyncExecutePromiseGeneratorProgram(function(b){if(1==b.nextAddress){a.IMPORT_FILES=a.IMPORT_FILES||{};if("function"==typeof d)return b.yield(d.call(a),  0);if("string"!==typeof d)return h=f.url(d.f),a.IMPORT_FILES[h]?b.jumpTo(0):b.yield(d.c.call(a),8);c=f.url(d);a.IMPORT_FILES[c]||(a.IMPORT_FILES[c]=new Promise(function(g){var k=c;k+=(c.match(/\?/)?"&":"?")+"t="+(f.buildTime||"0");k=f.base+k.replace(/^style\//i,"");if(d.match(/\.css$/)){var l=e.createElement("link");l.setAttribute("rel","stylesheet");l.href=k}else l=e.createElement("script"),l.type="text/javascript",l.src=k;l.async=!1;l.defer=!0;e.head.appendChild(l);l.addEventListener("load",function(){return $jscomp.asyncExecutePromiseGeneratorProgram(function(m){if(1==  m.nextAddress)return m.yield(a["require("+c+")"],2);g(1);m.jumpToEnd()})});l.addEventListener("error",function(){console.error("load file error "+c+", check source file again");g(0)});l.addEventListener("abort",function(){console.error("abort file "+c);g(-1)})}));return b.yield(a.IMPORT_FILES[c],0)}a.IMPORT_FILES[h]=!0;return b.jumpTo(0)})},imports:function(d,c){var h;return $jscomp.asyncExecutePromiseGeneratorProgram(function(b){switch(b.nextAddress){case 1:if(Array.isArray(d)){b.jumpTo(2);break}return b.yield(f.load(d),  3);case 2:h=0;case 5:if(!(h<d.length)){b.jumpTo(3);break}return b.yield(f.load(d[h]),6);case 6:h++;b.jumpTo(5);break;case 3:if(!c){b.jumpTo(9);break}return b.yield(c(),10);case 10:case 9:b.jumpToEnd()}})},require:function(d){return $jscomp.asyncExecutePromiseGeneratorProgram(function(c){return 1==c.nextAddress?"string"===typeof d||Array.isArray(d)?c.yield(imports(d),3):c.jumpTo(0):c.return(c.yieldResult)})}};a.Apps=f;a.imports=f.imports;a.require=f.require})(window,document);  
+imports('@login')</script>
+</head>
+<body>
+    <div class="wrap">
+    <div id="login-page" login-count="0" style="background-image: url(/packages/4x/style/packages/login/images/bg.svg)">
+        <div class="login-wrap">
+            
+<div class="login-left">
+    <div class="fade-down">
+        <img src="/packages/4x/style/packages/login/images/logo.svg" />
+
+                    <div style="margin-bottom: 8px; font-size: 28px; font-weight: 500">
+                Not just a <span style="color: var(--primary)">MANAGEMENT SOLUTION</span>
+            </div>
+
+            <div style="text-align: right; color: var(--color-text-orange); font-size: 18px">Work anytime, anywhere</div>
+            </div>
+
+    <div style="text-align: center" class="fade-right login-left-image">
+        <img src="/packages/4x/style/packages/login/images/bg1.svg" style="width: 95%" />
+    </div>
+</div>
+
+            <div class="login-right">
+                <form id="form-login" class="login-form fade-up" action="https://trial.1office.vn/login" method="post">
+                <div id="login-form-base">
+                    <input id="url-login" type="hidden" name="url_login" value="https://trial.1office.vn/login"/>
+
+                                            <input type="hidden" name="r" value="https://trial.1office.vn/admin"/>
+                                        <div class="header-container">
+                        <div class="form-title">
+                            Login                        </div>
+                        <div class="language-selector-container">
+                            <div class="language-selector-wrapper">
+                                <div class="language-dropdown-custom" onclick="updateLang(this)">
+                                    <div class="language-select-input">
+                                        <div class="selected-language-icon">
+                                            <div class="language-globe-icon"></div>
+                                        </div>
+                                        <span class="language-label">Select language</span>
+                                        <div class="language-arrow-icon"></div>
+                                    </div>
+                                    <ul class="language-select-list" id="language">
+                                                                                    <li data-id="vn" data-type="vn">
+                                                                                                <img src="/packages/4x/style/flags/vn.svg" alt="Vn Flag" class="language-flag" width="24" height="18">
+                                                <span class="language-title">Tiếng Việt</span>
+                                            </li>
+                                                                                    <li data-id="en" data-type="en">
+                                                                                                <img src="/packages/4x/style/flags/gb.svg" alt="En Flag" class="language-flag" width="24" height="18">
+                                                <span class="language-title">English</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+                                <input type="hidden" name="selected_language" id="selected_language" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group ">
+                        <div class="form-input">
+                            <label for="username">Username*</label>
+                            <input value=" " type="text" class="form-control"
+                                   name="username" id="username" rel="input" required>
+                            <img src="/packages/4x/style/packages/login/images/icon/username.svg" class="icon-prefix">
+                        </div>
+                                            </div>
+
+                    <div class="form-group ">
+                        <div class="form-input">
+                            <label for="userpwd">Password*</label>
+                            <input type="password" class="form-control" name="userpwd" id="userpwd"
+                                   rel="input" required>
+                            <img src="/packages/4x/style/packages/login/images/icon/password.svg" class="icon-prefix">
+                            <img src="/packages/4x/style/packages/login/images/icon/eye.svg" class="icon-suffix toggle-eye"
+                                 style="cursor: pointer">
+                            <div class="eye-slash"></div>
+                        </div>
+                                            </div>
+
+                                                            
+                    <div style="display: flex; gap: 8px; align-items: center; justify-content: space-between">
+                        <div class="form-checkbox checked">
+                            <input type="checkbox" name="persistent" id="remember" checked>
+                            <div class="form-checkbox-mask"></div>
+                            <label for="remember">Keep me logged in</label>
+                        </div>
+
+                        <a href="/login/reset">Forgot your login password?</a>
+                    </div>
+
+                    <button type="submit" class="submit form-btn">
+                        Login                    </button>
+                </div>
+                                    <div style="text-align: center">
+    <div style="color: var(--color-text-secondary); margin-bottom: 16px">
+        Install the app on your phone    </div>
+
+    <div style="display: flex; gap: 16px; justify-content: center">
+        <a target="_blank" class="a" href="https://play.google.com/store/apps/details?id=vn.oneoffice.oneoffice">
+            <img src="/packages/4x/style/packages/login/images/chplay.svg" />
+        </a>
+        <a target="_blank" class="a" href="https://itunes.apple.com/us/app/1office/id1272801903?l=vi&ls=1&mt=8">
+            <img src="/packages/4x/style/packages/login/images/appstore.svg" />
+        </a>
+    </div>
+</div>                </form>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // Define translations for JavaScript
+    window.TRANSLATIONS = {
+        view_on_app: "View on 1Office app?",
+        agree: "Agree",
+        skip: "Skip",
+        skype_message: "You are opening the link via Skype, unfortunately this application does not support automatic switching to the 1Office app version. For a better experience, please choose to share the link to your default browser.",
+        close: "Close"
+    };
+
+    if (window.MOBILE) {
+        let originHeight = window.visualViewport.height;
+        document.body.style.height = originHeight + 'px';
+        document.getElementById('login-page').classList.add('mobile');
+    }
+
+    // Fix autofill chrome
+    setTimeout(function() {
+        document.querySelectorAll('[rel=input]').forEach(function(h) {
+            if (!h.value || h.value === ' ') {
+                h.value = '';
+            }
+
+            h.dispatchEvent(new Event('focus'));
+            h.dispatchEvent(new Event('blur'));
+        });
+        document.getElementById('username') !== null && document.getElementById('username').focus();
+    }, 300);
+
+    document.querySelectorAll('[rel=input]').forEach(function(h) {
+        h.addEventListener('input', function(e) {
+            this.parentNode.classList.add('focused');
+            this.closest('.form-group').classList.remove('form-error');
+        });
+
+        h.addEventListener('focus', function() {
+            this.parentNode.classList.add('focused');
+            if (window.MOBILE) {
+                document.body.scrollTop = 150;
+            }
+        });
+
+        h.addEventListener('blur', function() {
+            if (!this.value) {
+                this.parentNode.classList.remove('focused');
+            }
+        })
+    });
+
+    document.querySelectorAll('.toggle-eye').forEach(function(h) {
+        h.addEventListener('click', function() {
+            var parent = this.parentNode;
+            var input = parent.querySelector('input');
+
+            if (input.getAttribute('type') === 'password') {
+                input.setAttribute('type', 'text');
+                parent.querySelector('.eye-slash').style.display = 'block';
+            } else {
+                input.setAttribute('type', 'password');
+                parent.querySelector('.eye-slash').style.display = 'none';
+            }
+        });
+    });
+
+    document.querySelectorAll('input[type="checkbox"]').forEach(function(h) {
+        h.addEventListener('change', function() {
+            if (this.checked) {
+                this.parentNode.classList.add('checked');
+            } else {
+                this.parentNode.classList.remove('checked');
+            }
+        });
+    });
+
+    document.querySelectorAll('.form-checkbox-mask').forEach(function(h) {
+        h.addEventListener('click', function() {
+            this.parentNode.querySelector('input').click();
+        });
+    });
+
+    document.querySelectorAll('.form-btn').forEach(function(h) {
+        h.addEventListener('click', function(event) {
+            var button = event.currentTarget;
+
+            var circle = document.createElement("span");
+            var diameter = Math.max(button.clientWidth, button.clientHeight);
+            var radius = diameter / 2;
+
+            circle.style.width = circle.style.height = `${diameter}px`;
+            circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
+            circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
+            circle.classList.add("btn-ripple");
+
+            var ripple = button.getElementsByClassName("btn-ripple")[0];
+            if (ripple) {
+                ripple.remove();
+            }
+
+            button.appendChild(circle);
+        })
+    });
+</script>
+<script>
+    function validType(e) {
+        if (typeof e != 'undefined') {
+            var type = e.getAttribute('data-type') || '',
+                loginURL = e.getAttribute('data-url') || '';
+
+            if (type === 'LDAP') {
+                document.getElementById('form-login').setAttribute('action', loginURL);
+                document.getElementById('ldap').style.display = 'block';
+                document.getElementById('orline').style.display = 'none';
+            }
+        }
+    }
+
+    function rollBackTitle() {
+        var loginURL = document.getElementById('url-login');
+        document.getElementById('form-login').setAttribute('action', loginURL.value);
+        document.getElementById('ldap').style.display = 'none';
+        document.getElementById('orline').style.display = 'block';
+    }
+
+    function customDropdown(e) {
+        const $dropdown = $(e);
+
+        if ($dropdown.length > 0) {
+            $dropdown.toggleClass('active');
+            $dropdown.find('.select-input').toggleClass('active');
+
+            // Đóng dropdown nếu click bên ngoài
+            document.addEventListener('click', function closeDropdown(event) {
+                if (!e.contains(event.target)) {
+                    e.classList.remove('active');
+                    document.removeEventListener('click', closeDropdown);
+                }
+            });
+
+            const $dropdownList = $dropdown.find('.select-list li');
+            $dropdownList.each(function() {
+                const $item = $(this);
+                $item.click(function() {
+                    const $id = $item.attr('data-id');
+                    const $type = $item.attr('data-type');
+                    const loginURL = '/app/sso/login?id=' + $id;
+
+                    $dropdown.find('.select-input .label').text($item.find('.title').text());
+                    $dropdown.find('.select-input .icon').attr('title', 'Xoá tất cả').html('&#x2715;').click(function() {
+                        $dropdown.find('.select-input .label').text('Chọn cấu hình SSO*');
+                        $(this).html('<img src="/packages/4x/style/packages/login/images/icon/caret-right.svg">');
+                    });
+
+                    if ($type == 'LDAP') {
+                        $('#form-login').attr('action', loginURL);
+                        $('#ldap').css('display', 'block');
+                        $('#orline').css('display', 'none');
+                    } else {
+                        window.location.href = loginURL;
+                    }
+                });
+            });
+
+        }
+    }
+</script>
+
+<script>
+    /**
+     * Get user language from URL, cookie, or browser settings
+     * @returns {string} 'vn' or 'en'
+     */
+    function getUserLanguage() {
+        const urlLang = new URLSearchParams(window.location.search).get('lang');
+        if (['vn', 'en'].includes(urlLang)) return urlLang;
+
+        const cookieLang = "en";
+        if (['vn', 'en'].includes(cookieLang)) return cookieLang;
+
+        return (navigator.language || "en").startsWith('vi') ? 'vn' : 'en';
+    }
+
+    /**
+     * Update dropdown UI with selected language
+     * @param {HTMLElement} dropdown
+     * @param {HTMLElement} item
+     */
+    function updateDropdownUI(dropdown, item) {
+        if (!dropdown || !item) return;
+
+        // Only update label text on desktop devices
+        if (window.innerWidth > 768) { // Common breakpoint for mobile vs desktop
+            dropdown.querySelector('.language-label').textContent = item.querySelector('.language-title')?.textContent || '';
+        }
+        const selectedIcon = dropdown.querySelector('.selected-language-icon');
+        selectedIcon.innerHTML = '';
+        const flag = item.querySelector('.language-flag');
+        if (flag) selectedIcon.appendChild(flag.cloneNode(true));
+    }
+
+    /**
+     * Set initially selected language based on user preference
+     */
+    function setInitialLanguage() {
+        const userLang = getUserLanguage();
+        const dropdown = document.querySelector('.language-dropdown-custom');
+        const items = document.querySelectorAll('#language li');
+        let matchedItem = Array.from(items).find(item => item.getAttribute('data-id') === userLang);
+        document.getElementById('selected_language')?.setAttribute('value', userLang);
+
+        updateDropdownUI(dropdown, matchedItem || items[0]);
+    }
+
+    /**
+     * Handle dropdown interactions
+     * @param {HTMLElement} element
+     */
+    function updateLang(element) {
+        element.classList.toggle('active');
+        element.querySelector('.language-select-input')?.classList.toggle('active');
+
+        element.querySelectorAll('.language-select-list li').forEach(item => {
+            const newItem = item.cloneNode(true);
+            item.replaceWith(newItem);
+
+            newItem.addEventListener('click', e => {
+                e.stopPropagation();
+
+                const lang = newItem.getAttribute('data-id');
+                document.getElementById('selected_language')?.setAttribute('value', lang);
+                updateDropdownUI(element, newItem);
+
+                element.classList.remove('active');
+
+                const url = new URL(window.location.href);
+                url.searchParams.set('lang', lang);
+                window.location.href = url.toString();
+            });
+        });
+
+        // Close dropdown on outside click
+        document.addEventListener('click', function closeDropdown(e) {
+            if (!element.contains(e.target)) {
+                element.classList.remove('active');
+                document.removeEventListener('click', closeDropdown);
+            }
+        });
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', setInitialLanguage);
+</script>
+</div>
+</body>
+</html>
+<elem name='div' data-props='{"object":null,"action":null,"object_id":null,"events":{"created":["async function() {\n        let lastContext = window.APP_CONTEXT;\n        window.APP_CONTEXT = {\n            object: this.data.props.object,\n            action: this.data.props.action,\n            object_id: this.data.props.object_id\n        };\n        \n        if (lastContext &amp;&amp; JSON.stringify(lastContext) != JSON.stringify(window.APP_CONTEXT)) {\n            $(\".assistant.header-link\").remove();\n        }\n\n        if (![\"add\", \"edit\"].includes(this.data.props.action)) {\n            $(\".assistant.header-link\").remove();\n        }\n    }"]}}'></elem>

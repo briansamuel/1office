@@ -1,28 +1,38 @@
 {
-    "name": "1office-frontend",
-    "version": "1.0.0",
-    "description": "1Office Frontend with Vue 3",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview"
-    },
-    "devDependencies": {
-        "@vitejs/plugin-vue": "^4.0.0",
-        "axios": "^1.1.2",
-        "laravel-vite-plugin": "^0.7.2",
-        "vite": "^4.0.0"
-    },
-    "dependencies": {
-        "@headlessui/vue": "^1.7.16",
-        "@heroicons/vue": "^2.0.18",
-        "@tailwindcss/forms": "^0.5.6",
-        "autoprefixer": "^10.4.16",
-        "pinia": "^2.1.7",
-        "postcss": "^8.4.31",
-        "tailwindcss": "^3.3.5",
-        "vue": "^3.3.8",
-        "vue-router": "^4.2.5"
-    }
+  "name": "1office-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright tests for trial.1office.vn",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:login": "playwright test tests/1office-login.spec.js",
+    "test:advanced": "playwright test tests/1office-advanced.spec.js",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:safari": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project='Mobile Chrome'",
+    "report": "playwright show-report",
+    "install-browsers": "playwright install",
+    "analyze-form": "playwright test tests/1office-advanced.spec.js --grep 'should analyze login form structure'",
+    "security-check": "playwright test tests/1office-advanced.spec.js --grep 'should check for common security features'",
+    "demo-login": "playwright test tests/1office-advanced.spec.js --grep 'should login with demo credentials' --headed"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "1office",
+    "automation",
+    "e2e"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "dependencies": {
+    "playwright": "^1.53.2"
+  }
 }
